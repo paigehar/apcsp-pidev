@@ -1,20 +1,23 @@
 #include<stdio.h>
-float area(int a)
+
+int areaOfCircle(float r)
 {
-return (3.14159*a*a);
+return (3.1415*r*r);
 }
 
 int main()
 {
-int a;
-float b;
-b = area(a);
-for(a = 3; a < 12; a = a + 1)
+
+float r;
+float area;
+area = areaOfCircle(r);
+for(r = 3; r < 13; r = r + 1)
 {
-        float d = a+ 0.5;
-        float e;
-        e = area(d);
+  float d = r+ 0.5;
+  float e;
+  e = areaOfCircle(d);
 printf("Area: %f\n",e);
+
 }
 return 0;
 }
